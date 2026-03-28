@@ -16,6 +16,12 @@ variable "ipv4_primary_cidr_block" {
   type        = string
 }
 
+variable "ipv4_zurich_cidr_block" {
+  default     = "10.1.0.0/16"
+  description = "The primary IPv4 CIDR block for the Zurich (eu-central-2) DR VPC"
+  type        = string
+}
+
 variable "default_tags" {
   default = {
     ManagedBy = "Terraform"

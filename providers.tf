@@ -23,3 +23,11 @@ provider "aws" {
     tags = var.default_tags
   }
 }
+
+provider "aws" {
+  alias  = "zurich"
+  region = "eu-central-2"
+  default_tags {
+    tags = var.default_tags
+  }
+}
