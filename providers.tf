@@ -7,9 +7,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket       = "tf-state-20250511233244056000000001"
+    bucket       = "tf-state-20260329231040326100000001"
     key          = "vpc.tfstate"
-    region       = "me-south-1"
+    region       = "eu-central-2"
     encrypt      = true
     use_lockfile = true
   }
